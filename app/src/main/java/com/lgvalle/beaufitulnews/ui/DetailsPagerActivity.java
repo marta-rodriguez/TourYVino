@@ -8,9 +8,9 @@ import com.lgvalle.beaufitulnews.data.InPreferencesItemStorage;
 import com.lgvalle.beaufitulnews.data.ItemRepository;
 import com.lgvalle.beaufitulnews.data.ItemStorage;
 import com.lgvalle.beaufitulnews.data.OnlineItemRepository;
-import com.lgvalle.beaufitulnews.elpais.ElPaisModule;
-import com.lgvalle.beaufitulnews.elpais.model.Item;
-import com.lgvalle.beaufitulnews.elpais.model.Section;
+import com.lgvalle.beaufitulnews.touryvino.TourYVinoModule;
+import com.lgvalle.beaufitulnews.touryvino.model.Item;
+import com.lgvalle.beaufitulnews.touryvino.model.Section;
 import com.lgvalle.beaufitulnews.utils.BusHelper;
 import com.lgvalle.beaufitulnews.utils.PrefsManager;
 import com.xgc1986.parallaxPagerTransformer.ParallaxPagerTransformer;
@@ -83,7 +83,7 @@ public class DetailsPagerActivity extends BaseActivity implements DetailsPagerSc
 	@Override
 	protected void initPresenter() {
 		ItemStorage storage = InPreferencesItemStorage.getInstance(PrefsManager.getInstance(this));
-		ItemRepository repository = OnlineItemRepository.getInstance(ElPaisModule.getService(), storage);
+		ItemRepository repository = OnlineItemRepository.getInstance(TourYVinoModule.getService(), storage);
 
 		this.presenter = new DetailsPagerPresenterImpl(repository, this);
 	}

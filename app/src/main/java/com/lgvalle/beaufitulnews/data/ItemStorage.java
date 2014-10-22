@@ -1,6 +1,6 @@
 package com.lgvalle.beaufitulnews.data;
 
-import com.lgvalle.beaufitulnews.elpais.model.Item;
+import com.lgvalle.beaufitulnews.touryvino.model.Item;
 
 import java.util.List;
 import java.util.Map;

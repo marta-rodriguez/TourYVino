@@ -21,9 +21,9 @@ import com.lgvalle.beaufitulnews.data.InPreferencesItemStorage;
 import com.lgvalle.beaufitulnews.data.ItemRepository;
 import com.lgvalle.beaufitulnews.data.ItemStorage;
 import com.lgvalle.beaufitulnews.data.OnlineItemRepository;
-import com.lgvalle.beaufitulnews.elpais.ElPaisModule;
-import com.lgvalle.beaufitulnews.elpais.model.Item;
-import com.lgvalle.beaufitulnews.elpais.model.Section;
+import com.lgvalle.beaufitulnews.touryvino.TourYVinoModule;
+import com.lgvalle.beaufitulnews.touryvino.model.Item;
+import com.lgvalle.beaufitulnews.touryvino.model.Section;
 import com.lgvalle.beaufitulnews.utils.BusHelper;
 import com.lgvalle.beaufitulnews.utils.PrefsManager;
 
@@ -211,7 +211,7 @@ public class SectionsPagerActivity extends BaseActivity implements SectionsPager
 	protected void initPresenter() {
 		// Init activity presenter with all it's dependencies
 		ItemStorage storage = InPreferencesItemStorage.getInstance(PrefsManager.getInstance(this));
-		ItemRepository repository = OnlineItemRepository.getInstance(ElPaisModule.getService(), storage);
+		ItemRepository repository = OnlineItemRepository.getInstance(TourYVinoModule.getService(), storage);
 
 		this.presenter = new SectionsPagerPresenterImpl(repository, this);
 	}

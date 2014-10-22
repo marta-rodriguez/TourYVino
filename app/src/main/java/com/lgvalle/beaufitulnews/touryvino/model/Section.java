@@ -1,4 +1,4 @@
-package com.lgvalle.beaufitulnews.elpais.model;
+package com.lgvalle.beaufitulnews.touryvino.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

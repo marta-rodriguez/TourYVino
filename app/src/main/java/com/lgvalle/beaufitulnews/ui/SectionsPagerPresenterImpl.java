@@ -2,8 +2,8 @@ package com.lgvalle.beaufitulnews.ui;
 
 import android.util.Log;
 import com.lgvalle.beaufitulnews.data.ItemRepository;
-import com.lgvalle.beaufitulnews.elpais.model.Item;
-import com.lgvalle.beaufitulnews.elpais.model.Section;
+import com.lgvalle.beaufitulnews.touryvino.model.Item;
+import com.lgvalle.beaufitulnews.touryvino.model.Section;
 import com.lgvalle.beaufitulnews.events.ItemChosenEvent;
 import com.lgvalle.beaufitulnews.events.ItemsAvailableEvent;
 import com.lgvalle.beaufitulnews.events.RequestingMoreItemsEvent;

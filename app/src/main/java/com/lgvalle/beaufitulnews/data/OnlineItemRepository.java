@@ -1,10 +1,10 @@
 package com.lgvalle.beaufitulnews.data;
 
 import android.util.Log;
-import com.lgvalle.beaufitulnews.elpais.ElPaisService;
-import com.lgvalle.beaufitulnews.elpais.model.Item;
-import com.lgvalle.beaufitulnews.elpais.model.Rss;
-import com.lgvalle.beaufitulnews.elpais.model.Section;
+import com.lgvalle.beaufitulnews.touryvino.TourYVinoService;
+import com.lgvalle.beaufitulnews.touryvino.model.Item;
+import com.lgvalle.beaufitulnews.touryvino.model.Rss;
+import com.lgvalle.beaufitulnews.touryvino.model.Section;
 import retrofit.RetrofitError;
 
 import java.util.ArrayList;
@@ -19,18 +19,18 @@ public class OnlineItemRepository implements ItemRepository {
 	private static OnlineItemRepository instance;
 	/* memory cache */
 	final Map<String, List<Item>> map;
-	final ElPaisService service;
+	final TourYVinoService service;
 	final ItemStorage storage;
 
 
-	public static ItemRepository getInstance(ElPaisService service, ItemStorage storage) {
+	public static ItemRepository getInstance(TourYVinoService service, ItemStorage storage) {
 		if (instance == null) {
 			instance = new OnlineItemRepository(service, storage);
 		}
 		return instance;
 	}
 
-	private OnlineItemRepository(ElPaisService service, ItemStorage storage) {
+	private OnlineItemRepository(TourYVinoService service, ItemStorage storage) {
 		this.service = service;
 		this.storage = storage;
 		// Init memory cache with stored data

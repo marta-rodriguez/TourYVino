@@ -3,7 +3,7 @@ package com.lgvalle.beaufitulnews.data;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import com.lgvalle.beaufitulnews.elpais.model.Item;
+import com.lgvalle.beaufitulnews.touryvino.model.Item;
 import com.lgvalle.beaufitulnews.utils.PrefsManager;
 
 import java.lang.reflect.Type;

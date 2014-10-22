@@ -8,7 +8,7 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import butterknife.InjectView;
 import com.lgvalle.beaufitulnews.R;
-import com.lgvalle.beaufitulnews.elpais.model.Section;
+import com.lgvalle.beaufitulnews.touryvino.model.Section;
 import com.lgvalle.beaufitulnews.events.ItemsAvailableEvent;
 import com.lgvalle.beaufitulnews.events.RequestingMoreItemsEvent;
 import com.lgvalle.beaufitulnews.utils.BusHelper;

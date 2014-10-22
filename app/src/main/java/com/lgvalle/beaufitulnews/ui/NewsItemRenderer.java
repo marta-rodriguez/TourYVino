@@ -11,7 +11,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import com.facebook.rebound.*;
 import com.lgvalle.beaufitulnews.R;
-import com.lgvalle.beaufitulnews.elpais.model.Item;
+import com.lgvalle.beaufitulnews.touryvino.model.Item;
 import com.lgvalle.beaufitulnews.utils.Renderer;
 import com.lgvalle.beaufitulnews.utils.TransformGradient;
 import com.squareup.picasso.Picasso;

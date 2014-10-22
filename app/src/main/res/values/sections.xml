@@ -2,83 +2,18 @@
 <resources>
 
 	<string-array name="sections_url">
-		<item>elpais/portada-f01.xml</item>
-		<item>internacional/portada-f01.xml</item>
-		<item>politica/portada-f01.xml</item>
-		<item>tags/espana_a-f01.xml</item>
-		<item>economia/portada-f01.xml</item>
-		<!--<item>tecnologia/portada-f01.xml</item>-->
-		<item>deportes/portada-f01.xml</item>
-		<item>sociedad/portada-f01.xml</item>
-		<item>elpais/gente-f01.xml</item>
-		<item>cultura/television-f01.xml</item>
-		<item>elpais/opinion-f01.xml</item>
-		<item>elpais/vinetas-f01.xml</item>
-		<item>cultura/portada-f01.xml</item>
-		<item>tags/cine_a-f01.xml</item>
-		<!--<item>tags/musica_a-f01.xml</item>-->
-		<item>elpais/motor-f01.xml</item>
-		<item>ccaa/andalucia-f01.xml</item>
-		<item>ccaa/catalunya-f01.xml</item>
-		<item>ccaa/galicia-f01.xml</item>
-		<item>ccaa/madrid-f01.xml</item>
-		<item>ccaa/paisvasco-f01.xml</item>
-		<item>ccaa/valencia-f01.xml</item>
-
+		<item>acerca-del-vino</item>
+		<item>blog</item>
 	</string-array>
 
 	<string-array name="sections_name">
-		<item>@string/section_portada</item>
-		<item>Internacional</item>
-		<item>Politica</item>
-		<item>España</item>
-		<item>Economia</item>
-		<!--<item>tecnologia</item>-->
-		<item>Deportes</item>
-		<item>Sociedad</item>
-		<item>Gente</item>
-		<item>Television</item>
-		<item>Opinión</item>
-		<item>Viñetas</item>
-		<item>Cultura</item>
-		<item>Cine</item>
-		<!--<item>música</item>-->
-		<item>Motor</item>
-		<item>Andalucia</item>
-		<item>Catalunya</item>
-		<item>Galicia</item>
-		<item>Madrid</item>
-		<item>País Vasco</item>
-		<item>Valencia</item>
-
+		<item>Acerca del Vino</item>
+		<item>Blog</item>
 	</string-array>
 
 	<array name="sections_color">
 		<item>@color/theme_main</item>
 		<item>@color/indigo_500</item>
-		<item>@color/red_500</item>
-		<item>@color/pink_500</item>
-		<item>@color/light_blue_500</item>
-		<!--<item>@color/green_500</item>-->
-		<item>@color/teal_500</item>
-		<item>@color/red_900</item>
-		<item>@color/pink_900</item>
-		<item>@color/pink_700</item>
-		<item>@color/green_500</item>
-		<item>@color/light_green_800</item>
-		<item>@color/blue_a400</item>
-		<item>@color/light_blue_700</item>
-		<!--<item>@color/lime_900</item>-->
-		<item>@color/brown_500</item>
-		<item>@color/cyan_900</item>
-		<item>@color/cyan_900</item>
-		<item>@color/cyan_900</item>
-		<item>@color/cyan_900</item>
-		<item>@color/cyan_900</item>
-		<item>@color/cyan_900</item>
-
-
-
 	</array>
 
 

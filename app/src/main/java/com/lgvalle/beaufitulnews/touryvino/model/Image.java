@@ -1,4 +1,4 @@
-package com.lgvalle.beaufitulnews.elpais.model;
+package com.lgvalle.beaufitulnews.touryvino.model;
 
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;

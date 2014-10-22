@@ -1,6 +1,6 @@
 package com.lgvalle.beaufitulnews.events;
 
-import com.lgvalle.beaufitulnews.elpais.model.Section;
+import com.lgvalle.beaufitulnews.touryvino.model.Section;
 
 /**
  * Created by lgvalle on 22/07/14.

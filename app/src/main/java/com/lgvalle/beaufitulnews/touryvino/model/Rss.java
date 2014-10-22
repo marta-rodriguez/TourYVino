@@ -1,4 +1,4 @@
-package com.lgvalle.beaufitulnews.elpais.model;
+package com.lgvalle.beaufitulnews.touryvino.model;
 
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
@@ -12,9 +12,6 @@ public class Rss {
 	@Element
 	private Channel channel;
 
-	@Element(required = false)
-	private String version;
-
 
 	public Channel getChannel() {
 		return channel;
@@ -22,14 +19,6 @@ public class Rss {
 
 	public void setChannel(Channel channel) {
 		this.channel = channel;
-	}
-
-	public String getVersion() {
-		return version;
-	}
-
-	public void setVersion(String version) {
-		this.version = version;
 	}
 
 }

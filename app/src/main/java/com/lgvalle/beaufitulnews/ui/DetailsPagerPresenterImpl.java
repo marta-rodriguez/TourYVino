@@ -1,8 +1,8 @@
 package com.lgvalle.beaufitulnews.ui;
 
 import com.lgvalle.beaufitulnews.data.ItemRepository;
-import com.lgvalle.beaufitulnews.elpais.model.Item;
-import com.lgvalle.beaufitulnews.elpais.model.Section;
+import com.lgvalle.beaufitulnews.touryvino.model.Item;
+import com.lgvalle.beaufitulnews.touryvino.model.Section;
 
 import java.util.List;
 

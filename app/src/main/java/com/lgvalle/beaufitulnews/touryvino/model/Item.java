@@ -1,4 +1,4 @@
-package com.lgvalle.beaufitulnews.elpais.model;
+package com.lgvalle.beaufitulnews.touryvino.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -19,18 +19,14 @@ public class Item implements Parcelable {
 
 	@Element(required = false)
 	private String title;
-	@ElementList(entry = "descs", inline = true, required = false)
-	private List<String> descs;
+
 	@ElementList(entry = "description", inline = true, required = false)
-	@Namespace(reference = "http://search.yahoo.com/mrss/", prefix = "media")
+	@Namespace(reference = "http://purl.org/rss/1.0/modules/content/", prefix = "content")
 	private List<String> description;
 	@Element(required = false)
 	private String pubDate;
 	@Element(required = false)
 	private String link;
-
-	@ElementList(inline = true, required = false)
-	private List<Enclosure> enclosures;
 
 
 	public String getLink() {
@@ -41,29 +37,12 @@ public class Item implements Parcelable {
 		this.link = link;
 	}
 
-	public List<Enclosure> getEnclosures() {
-		return enclosures;
-	}
-
-	public void setEnclosures(List<Enclosure> enclosures) {
-		this.enclosures = enclosures;
-	}
-
 	public String getTitle() {
 		return title;
 	}
 
 	public void setTitle(String title) {
 		this.title = title;
-	}
-
-
-	public List<String> getDescs() {
-		return descs;
-	}
-
-	public void setDescs(List<String> descs) {
-		this.descs = descs;
 	}
 
 
@@ -84,16 +63,7 @@ public class Item implements Parcelable {
 	}
 
 	public String getImageURLSmall() {
-		String image = null;
-		if (enclosures != null) {
-			image = enclosures.get(0).getUrl();
-
-			if (enclosures.size() > 1) {
-				image = enclosures.get(1).getUrl();
-			}
-
-		}
-		return image;
+		return "http://www.touryvino.com/wp-content/uploads/2014/08/header-logo.png";
 	}
 
 	/**
@@ -102,13 +72,7 @@ public class Item implements Parcelable {
 	 * @return
 	 */
 	public String getImageURLLarge() {
-		String image = null;
-		for (Enclosure enclosure : enclosures) {
-			if (enclosure.getType().equals(Enclosure.TYPE_IMAGE)) {
-				image = enclosure.getUrl();
-			}
-		}
-		return image;
+		return "http://www.touryvino.com/wp-content/uploads/2014/08/header-logo.png";
 	}
 
 
@@ -124,23 +88,17 @@ public class Item implements Parcelable {
 	@Override
 	public void writeToParcel(Parcel dest, int flags) {
 		dest.writeString(this.title);
-		dest.writeStringList(this.descs);
 		dest.writeStringList(this.description);
 		dest.writeString(this.pubDate);
 		dest.writeString(this.link);
-		dest.writeTypedList(enclosures);
 	}
 
 	private Item(Parcel in) {
 		this.title = in.readString();
-		descs = new ArrayList();
-		in.readStringList(descs);
 		this.description = new ArrayList();
 		in.readStringList(this.description);
 		this.pubDate = in.readString();
 		this.link = in.readString();
-		enclosures = new ArrayList();
-		in.readTypedList(enclosures, Enclosure.CREATOR);
 	}
 
 	public static final Creator<Item> CREATOR = new Creator<Item>() {
